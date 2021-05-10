@@ -1,0 +1,350 @@
+<!DOCTYPE html><html><head><title>Preview</title>
+<style type="text/css"><!--
+main{
+    position: relative;
+    z-index: -2;
+}
+
+*{
+    margin: 0px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+ .nav-links{
+    display: flex;
+    justify-content: space-around;
+    height: 10vh;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    background-color: black;
+}
+
+
+.nav-links li{
+    list-style: none;
+}
+
+.nav-links li a{
+    font-size: 21px;
+   text-decoration: none;
+   color: white;
+   font-weight: bolder;
+}
+.nav-links li a:hover{
+     font-size: 25px;
+
+}
+
+.home{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(home-background.jpg);
+    background-repeat: no-repeat;
+   background-position: center;
+    background-size: cover;
+}
+
+.home div{
+        height: 100vh;
+        background-color: rgba(244, 238, 241, 0.5);
+        width: 50%;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+}
+
+.projects{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(projects-background.jpg);
+     background-repeat: no-repeat;
+   background-position: center;
+    background-size: cover;
+
+}
+.projects div{
+    height: 100vh;
+    background-color: rgba(244, 238, 241, 0.5);
+    width: 50%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.projects div a{
+
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+ .projects div a:hover{
+     font-size:
+ }
+
+.about{
+    height: 100vh;
+        display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(about-background.jpg);
+     background-repeat: no-repeat;
+   background-position: center;
+    background-size: cover;
+
+}
+
+
+#about-tile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    width: 50%;
+    height: 100vh;
+    background-color: rgba(244, 238, 241, 0.2);
+    width: 50%;
+}
+
+#about-tile p{
+    font-size: 16px;
+    text-align: justify;
+    word-spacing: 3px;
+    width: 93%;
+    font-weight: bold;
+}
+
+.contact{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+     background-image: url(contact-background.jpg);
+      background-repeat: no-repeat;
+   background-position: center;
+    background-size: cover;
+}
+.contact div{
+     display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+ .burger{
+    display: none;
+    cursor: pointer;
+}
+
+.burger div{
+    width:25px;
+    height:2px;
+    background-color: white;
+    margin:5px;
+    transition: all 0.3s ease;
+
+}
+.bubble {
+   position: absolute;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.57);
+    transition: all 0.5s ease;
+    border: whitesmoke;;
+}
+
+.nav-active{
+    transform: translateX(0%);
+}
+h1{
+       text-align: center;
+    font-size: 100px;
+    font-weight: bold;
+    position: relative;
+    top: 27px;
+
+}
+
+h2{
+font-size: 34px;
+}
+h3{
+    font-size: 34px;
+    padding-bottom: 23px;
+}
+
+h5{
+    font-size: 34px;
+    padding-bottom: 18px;
+}
+ #project-tile img{
+    width: 24px;
+    padding-right: 5%;
+    height: 19px;
+ }
+
+ #web-app,#youtube-app{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    height: 6%;
+    width: 63%;
+    background-color: transparent;
+ }
+
+#hi{
+     font-size: 24px;
+    position: relative;
+    top: 156px;
+    left: -220px;
+}
+
+/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-box {
+    background-color: transparent;
+   width: 158px;
+    height: 131px;
+    perspective: 1000px;
+
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+    position: relative;
+    width: 114%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:20%;
+    border: solid black;
+    background-color: white;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-box-front {
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+/* Style the back side */
+.flip-box-back {
+
+    color: white;
+    transform: rotateY(180deg);
+}
+.flip-box-front img{
+     height: 35%;
+    width: 30%;
+}
+.flip-box-back a{
+    font-size: 109%;
+    color: black;
+    font-weight:bold;
+    text-decoration: none;
+}
+
+
+--></style>
+</head>
+<body>
+<a name="0"></a><main style="position: static;">main</main><br style="clear: both">
+<a name="1"></a><div style="position: static;">*</div>
+<br style="clear: both">
+<a name="2"></a><div style="position: static;" class="nav-links">.nav-links</div>
+<br style="clear: both">
+<a name="3"></a><div style="position: static;" class="nav-links"><ul><li style="position: static;">.nav-links li</li></ul></div><br style="clear: both">
+<a name="4"></a><div style="position: static;" class="nav-links"><li style="position: static;"><div style="position: static;">.nav-links li a</div>
+</li></div><br style="clear: both">
+<a name="5"></a><div style="position: static;" class="nav-links"><li style="position: static;"><a href="http://www.blumentals.net" target="_blank" style="position: static;">.nav-links li a:hover</a></li></div><br style="clear: both">
+<a name="6"></a><div style="position: static;" class="home">.home</div>
+<br style="clear: both">
+<a name="7"></a><div style="position: static;" class="home"><div style="position: static;">.home div</div></div><br style="clear: both">
+<a name="8"></a><div style="position: static;" class="projects">.projects</div>
+<br style="clear: both">
+<a name="9"></a><div style="position: static;" class="projects"><div style="position: static;">.projects div</div></div><br style="clear: both">
+<a name="10"></a><div style="position: static;" class="projects"><div style="position: static;"><div style="position: static;">.projects div a</div>
+</div></div><br style="clear: both">
+<a name="11"></a><div style="position: static;" class="projects"><div style="position: static;"><a href="http://www.blumentals.net" target="_blank" style="position: static;">.projects div a:hover</a></div></div><br style="clear: both">
+<a name="12"></a><div style="position: static;" class="about">.about</div>
+<br style="clear: both">
+<a name="13"></a><div style="position: static;" id="about-tile">#about-tile</div>
+<br style="clear: both">
+<a name="14"></a><div style="position: static;" id="about-tile"><div style="position: static;">#about-tile p</div>
+</div><br style="clear: both">
+<a name="15"></a><div style="position: static;" class="contact">.contact</div>
+<br style="clear: both">
+<a name="16"></a><div style="position: static;" class="contact"><div style="position: static;">.contact div</div></div><br style="clear: both">
+<a name="17"></a><div style="position: static;" class="burger">.burger</div>
+<br style="clear: both">
+<a name="18"></a><div style="position: static;" class="burger"><div style="position: static;">.burger div</div></div><br style="clear: both">
+<a name="19"></a><div style="position: static;" class="bubble">.bubble</div>
+<br style="clear: both">
+<a name="20"></a><div style="position: static;" class="nav-active">.nav-active</div>
+<br style="clear: both">
+<a name="21"></a><h1 style="position: static;">h1</h1><br style="clear: both">
+<a name="22"></a><h2 style="position: static;">h2</h2><br style="clear: both">
+<a name="23"></a><h3 style="position: static;">h3</h3><br style="clear: both">
+<a name="24"></a><h5 style="position: static;">h5</h5><br style="clear: both">
+<a name="25"></a><div style="position: static;" id="project-tile"><img src="file://D:\HTMLPad 2020\data\resources\preview.png" style="position: static;"> #project-tile img</div><br style="clear: both">
+<a name="26"></a><div style="position: static;" id="web-app">#web-app</div>
+<br style="clear: both">
+<a name="27"></a><div style="position: static;" id="youtube-app">#youtube-app</div>
+<br style="clear: both">
+<a name="28"></a><div style="position: static;" id="hi">#hi</div>
+<br style="clear: both">
+<a name="29"></a><div style="position: static;" class="flip-box">.flip-box</div>
+<br style="clear: both">
+<a name="30"></a><div style="position: static;" class="flip-box-inner">.flip-box-inner</div>
+<br style="clear: both">
+<a name="31"></a><div style="position: static;" class="flip-box"><div style="position: static;" class="flip-box-inner">.flip-box:hover .flip-box-inner</div>
+</div><br style="clear: both">
+<a name="32"></a><div style="position: static;" class="flip-box-front">.flip-box-front</div>
+<br style="clear: both">
+<a name="33"></a><div style="position: static;" class="flip-box-back">.flip-box-back</div>
+<br style="clear: both">
+<a name="34"></a><div style="position: static;" class="flip-box-front">.flip-box-front</div>
+<br style="clear: both">
+<a name="35"></a><div style="position: static;" class="flip-box-back">.flip-box-back</div>
+<br style="clear: both">
+<a name="36"></a><div style="position: static;" class="flip-box-front"><img src="file://D:\HTMLPad 2020\data\resources\preview.png" style="position: static;"> .flip-box-front img</div><br style="clear: both">
+<a name="37"></a><div style="position: static;" class="flip-box-back"><div style="position: static;">.flip-box-back a</div>
+</div><br style="clear: both">
+
+</body></html>

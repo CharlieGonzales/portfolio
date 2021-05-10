@@ -1,0 +1,279 @@
+main{
+    position: relative;
+    z-index: -2;
+}
+
+*{
+    margin: 0px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+ .nav-links{
+    display: flex;
+    justify-content: space-around;
+    height: 10vh;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    background-color: black;
+}
+
+
+.nav-links li{
+    list-style: none;
+}
+
+.nav-links li a{
+    font-size: 21px;
+   text-decoration: none;
+   color: white;
+   font-weight: bolder;
+}
+.nav-links li a:hover{
+     font-size: 25px;
+
+}
+
+.home{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(home-background.jpg);
+    background-repeat: no-repeat;
+   background-position: center;
+    background-size: cover;
+}
+
+.home div{
+        height: 100vh;
+        background-color: rgba(244, 238, 241, 0.5);
+        width: 50%;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+}
+
+.projects{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(projects-background.jpg);
+     background-repeat: no-repeat;
+   background-position: center;
+    background-size: cover;
+
+}
+.projects div{
+    height: 100vh;
+    background-color: rgba(244, 238, 241, 0.5);
+    width: 50%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.projects div a{
+
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+ .projects div a:hover{
+     font-size:
+ }
+
+.about{
+    height: 100vh;
+        display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(about-background.jpg);
+     background-repeat: no-repeat;
+   background-position: center;
+    background-size: cover;
+
+}
+
+
+#about-tile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    width: 50%;
+    height: 100vh;
+    background-color: rgba(244, 238, 241, 0.2);
+    width: 50%;
+}
+
+#about-tile p{
+    font-size: 16px;
+    text-align: justify;
+    word-spacing: 3px;
+    width: 93%;
+    font-weight: bold;
+}
+
+.contact{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+     background-image: url(contact-background.jpg);
+      background-repeat: no-repeat;
+   background-position: center;
+    background-size: cover;
+}
+.contact div{
+     display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+ .burger{
+    display: none;
+    cursor: pointer;
+}
+
+.burger div{
+    width:25px;
+    height:2px;
+    background-color: white;
+    margin:5px;
+    transition: all 0.3s ease;
+
+}
+.bubble {
+   position: absolute;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.57);
+    transition: all 0.5s ease;
+    border: whitesmoke;;
+}
+
+.nav-active{
+    transform: translateX(0%);
+}
+h1{
+       text-align: center;
+    font-size: 100px;
+    font-weight: bold;
+    position: relative;
+    top: 27px;
+
+}
+
+h2{
+font-size: 34px;
+}
+h3{
+    font-size: 34px;
+    padding-bottom: 23px;
+}
+
+h5{
+    font-size: 34px;
+    padding-bottom: 18px;
+}
+ #project-tile img{
+    width: 24px;
+    padding-right: 5%;
+    height: 19px;
+ }
+
+ #web-app,#youtube-app{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    height: 6%;
+    width: 63%;
+    background-color: transparent;
+ }
+
+#hi{
+     font-size: 24px;
+    position: relative;
+    top: 156px;
+    left: -220px;
+}
+
+/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-box {
+    background-color: transparent;
+   width: 158px;
+    height: 131px;
+    perspective: 1000px;
+
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+    position: relative;
+    width: 114%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:20%;
+    border: solid black;
+    background-color: white;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-box-front {
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+/* Style the back side */
+.flip-box-back {
+
+    color: white;
+    transform: rotateY(180deg);
+}
+.flip-box-front img{
+     height: 35%;
+    width: 30%;
+}
+.flip-box-back a{
+    font-size: 109%;
+    color: black;
+    font-weight:bold;
+    text-decoration: none;
+}
