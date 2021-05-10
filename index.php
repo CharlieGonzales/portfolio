@@ -60,8 +60,8 @@
                     <div id="about-tile">
                     <h3>About</h3>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;Hello! I'm Charlie II S. Gonzales and my dream is to become a professional Web Developer.
-I am  a beginner in Web Development and still learning. I sincerely hope that you can train me and guide me on my journey to be successful.
-I'm eager to learn things especially on things that i enjoy doing. Thank you!! and God Bless!!</p>
+I'm a beginner in Web Development and still learning. I sincerely hope that you can train me and guide me on my journey to be successful.
+I'm eager to learn especially things that I enjoy doing. Thank you, and God Bless.</p>
                     </div>
                 </section>
 
