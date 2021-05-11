@@ -75,7 +75,7 @@ I'm eager to learn especially things that I enjoy doing. Thank you, and God Bles
                                  <img src="messenger-logo.png" alt="messenger-logo">
                             </div>
                     <div class="flip-box-back">
-                        <a href="https://l.messenger.com/l.php?u=https%3A%2F%2Fm.me%2FcharlieG0930&h=AT1TMdVnLA8azC3f3ateVeroepX2beNPhKEM6g1iJhldfRY3BYWw2cfjP3XudwudvcTeUfVTi8t02rJp6JqjE7n462rjp16H97mn5clYopJjOaaSla4Vaee8RpviprpOMJ42gQ" target="_blank">Chat with me<br>in Facebook </a>
+                        <a href="https://l.messenger.com/l.php?u=https%3A%2F%2Fm.me%2FcharlieG0930&h=AT1TMdVnLA8azC3f3ateVeroepX2beNPhKEM6g1iJhldfRY3BYWw2cfjP3XudwudvcTeUfVTi8t02rJp6JqjE7n462rjp16H97mn5clYopJjOaaSla4Vaee8RpviprpOMJ42gQ" target="_blank">Chat with me<br>on Facebook </a>
                     </div>
                          </div>
                     </div>
@@ -97,7 +97,7 @@ I'm eager to learn especially things that I enjoy doing. Thank you, and God Bles
                                  <img src="whatsapp-logo.png" alt="whatsapp-logo">
                             </div>
                     <div class="flip-box-back">
-                        <a href="https://wa.me/09390062336">Message me<br>in WhatsApp</p>
+                        <a href="https://wa.me/09390062336">Message me<br>on WhatsApp</p>
 
                     </div>
                          </div>
