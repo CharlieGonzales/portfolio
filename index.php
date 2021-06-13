@@ -1,4 +1,4 @@
-<?php ?>
+
 <!DOCTYPE HTML>
           <html Lang="en">
 <html>
@@ -35,13 +35,47 @@
                         <h1>Charlie</h1>
                         <p id="description">Aspiring to be a Successful Web Developer</p>
                     </div>
+
                 </section>
                 <section class="projects" id="projects">
 
-                  <div id="project-tile">
                   <h2>Projects</h2>
 
-                       <div id="web-app">
+                          <div class="imgMainBody">
+                        <div class="imageFrame">
+                            <div class="imageSlide">
+                                <div class="imageContainer">
+                                <img src="pics\pic1.png" alt="bigBuilderImages">
+                                </div>
+                                <div class="imageContainer">
+                                <img src="pics\pic2.png" alt="bigBuilderImages">
+                                </div>
+                                <div class="imageContainer">
+                                <img src="pics\pic3.png" alt="bigBuilderImages">
+                                </div>
+                                <div class="imageContainer">
+                                <img src="pics\pic4.png" alt="bigBuilderImages">
+                                </div>
+                                <div class="imageContainer">
+                                <img src="pics\pic5.png" alt="bigBuilderImages">
+                                </div>
+                                <div class="imageContainer">
+                                <img src="pics\pic6.png" alt="bigBuilderImages">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="imageFrame2">
+                            <div class="imageSlide2">
+                                <div class="imageContainer">
+                                <img src="img2.png" alt="meTubeImages">
+                                </div>
+                                <div class="imageContainer">
+                                <img src="img1.png" alt="meTubeImages">
+                                </div>
+
+                            </div>
+                        </div>
+                      <!-- <div id="web-app">
                             <img src="check-logo.png" alt="check-logo">
                             <a href="https://bigbuilders-home-app.herokuapp.com">Business Web App</a>
                         </div>
@@ -49,20 +83,47 @@
                     <div id="youtube-app">
                         <img src="check-logo.png" alt="check-logo">
                         <a href="#">Simple Youtube App</a>
-                    </div>
+                    </div>-->
 
 
                   </div>
+                       <div class="label">
+                  <a href="https://bigbuilders-home-app.herokuapp.com">Business App</a>
+                   <a href="https://webdevmetube.herokuapp.com">Simple Youtube App</a>
 
+                </div>
 
             </section>
+
                 <section class="about" id="about" >
                     <div id="about-tile">
                     <h3>About</h3>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;Hello! I'm Charlie II S. Gonzales and my dream is to become a professional Web Developer.
-I'm a beginner in Web Development and still learning. I sincerely hope that you can train me and guide me on my journey to be successful.
-I'm eager to learn especially things that I enjoy doing. Thank you, and God Bless.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;Hello, Charlie II S. Gonzales here, and currently a 3rd-year
+Computer Science student. I’m interested in the path of being a Web Developer. Other
+than the subjects that they teach us under the curriculum of Computer Science,
+I’m also enrolled in 2 online code camps which are the FreeCodeCamp and Codecademy.
+I have completed the HTML and CSS part of the FreeCodeCamp and received the Responsive
+Web Design Certificate. I can develop a simple front-end of a website using CSS and HTML.
+I’m in the process of learning Javascript that is also essential in the front-end part of a website..</p>
+                        <div class="download">
+                        <div>
+                            <label for="cv">Curriculum Vitae</label>
+                            <a href="CV_CHARLIE_II_S_GONZALES.pdf">
+                                <img id="cv" src="download-logo.png"  alt="download button">
+                            </a>
+                        </div>
+                        <div> <label for="resume">Resume</label>
+                             <a href="RESUME_CHARLIE_II_GONZALES.pdf">
+                                <img id="resume" src="download-logo.png"  alt="download button">
+                            </a>
+                        </div>
+
                     </div>
+
+                    </div>
+
+
+
                 </section>
 
 
