@@ -69,7 +69,7 @@ main{
    background-position: center;
     background-size: cover;
 
-}
+}     /*
 .projects div{
     height: 100vh;
     background-color: rgba(244, 238, 241, 0.5);
@@ -89,7 +89,7 @@ main{
 }
  .projects div a:hover{
      font-size:25px;
- }
+ }*/
 
 .about{
     height: 100vh;
@@ -168,7 +168,7 @@ main{
     transform: translateX(0%);
 }
 h1{
-       text-align: center;
+    text-align: center;
     font-size: 100px;
     font-weight: bold;
     position: relative;
@@ -177,7 +177,8 @@ h1{
 }
 
 h2{
-font-size: 34px;
+    font-size: 34px;
+    padding-bottom: 21px;
 }
 h3{
     font-size: 34px;
@@ -188,11 +189,7 @@ h5{
     font-size: 34px;
     padding-bottom: 18px;
 }
- #project-tile img{
-    width: 24px;
-    padding-right: 5%;
-    height: 19px;
- }
+
 
  #web-app,#youtube-app{
     display: flex;
@@ -278,3 +275,102 @@ h5{
     font-weight:bold;
     text-decoration: none;
 }
+.imageContainer img{
+     width: 400px;
+    height: 41vh;
+}
+.imageFrame{
+    overflow: hidden;
+   width: 400px;
+    height: 41vh;
+    border: solid;
+    position: relative;
+  /*  right: 22vw;   */
+}
+
+.imageSlide{
+    display: flex;
+    position: relative;
+    animation-name: slide_Animation;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+
+}
+
+ @keyframes slide_Animation{
+   0%{right:0px;}
+    10%{right:0px;}
+    20%{right:400px;}
+    30%{right:400px;}
+    40%{right:800px;}
+    50%{right:800px;}
+    60%{right:1200px;}
+    70%{right:1200px;}
+    80%{right:1600px;}
+    90%{right:1600px;}
+    100%{right:2000px;}
+ }
+ .imageFrame2{
+     overflow: hidden;
+    width: 400px;
+    height: 41vh;
+    border: solid;
+    position: relative;
+ }
+
+ .imgMainBody{
+    display: flex;
+    width: 70vw;
+    justify-content: space-between;
+ }
+ .imageSlide2{
+ display: flex;
+    position: relative;
+    animation-name: slide_Animation2;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+ }
+ @keyframes slide_Animation2{
+      0%{right:0px;}
+      100%{
+          right: 400px;
+      }
+   }
+ .label{
+    display: flex;
+    justify-content: space-between;
+    width: 50.5vw;
+    padding-top: 11px;
+   }
+ .label a{
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color:black;
+   }
+   .download{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        margin-top: 53px;
+   }
+   .download div{
+       padding: 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+   }
+  .download a{
+      padding: 5px;
+  }
+
+   .download img{
+       width: 23px;
+   }
+
