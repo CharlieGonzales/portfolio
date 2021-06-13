@@ -108,12 +108,12 @@ I’m in the process of learning Javascript that is also essential in the front-
                         <div class="download">
                         <div>
                             <label for="cv">Curriculum Vitae</label>
-                            <a href="CV_CHARLIE_II_S_GONZALES.pdf">
+                            <a href="details\CV_CHARLIE_II_S_GONZALES.pdf">
                                 <img id="cv" src="download-logo.png"  alt="download button">
                             </a>
                         </div>
                         <div> <label for="resume">Resume</label>
-                             <a href="RESUME_CHARLIE_II_GONZALES.pdf">
+                             <a href="details\RESUME_CHARLIE_II_GONZALES.pdf">
                                 <img id="resume" src="download-logo.png"  alt="download button">
                             </a>
                         </div>
